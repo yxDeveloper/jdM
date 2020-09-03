@@ -1,0 +1,259 @@
+@charset "UTF-8";
+    /*sub-banner start*/
+    .sub-banner {
+        position: relative;
+    }
+    .sub-banner a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 644px;
+        background: url("../images/subbanner.jpg") no-repeat center top;
+        /*z-index: -1;      此方法会让其本身的链接消失*/
+    }
+    /*sub-banner start*/
+
+    /*main start*/
+    .main {
+        position: relative;
+        /*z-index: 1;       影响旁边的链接*/
+    }
+    .main-slider {
+        float: left;
+        width: 730px;
+        height: 454px;
+        margin: 12px 0 0 220px;
+        position: relative;
+    }
+    .main-slider ul {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -66px;
+    }
+    .main-slider li {
+        color: #fff;
+        float: left;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 18px;
+        margin: 0 2px;
+        cursor: pointer;
+        background-color: #3e3e3e;
+    }
+    .main-slider .current {
+        background-color: #B61b1f;
+    }
+    .arrow a {
+        position: absolute;
+        /*!*left: 0;*!       权重问题： left>right,top>buttom*/
+        top: 50%;
+        margin-top: -31px;
+        width: 28px;
+        height: 62px;
+        background: rgba(0,0,0, 0.3);
+        /*opacity: 0.1;*/
+        color: #fff;
+        /*border-radius: 30px;*/
+        text-align: center;
+        font: 400 22px/62px "simsun";
+    }
+    .arrow a:hover {
+        background: rgba(0,0,0, .5);
+    }
+    .arrow .arrow-left {
+        left: 0;
+        border-radius: 0 10px 10px 0;
+
+    }
+    .arrow .arrow-right {
+        right: 0;
+        border-radius: 10px 0 0 10px;
+    }
+    .main-news {
+        float: right;
+        height: 466px;
+        width: 250px;
+        /*overflow: hidden;         切错了*/
+    }
+    .main-news-top {
+        height: 372px;
+        width: 248px;
+        margin: 12px 0 5px 0;
+        overflow: hidden;
+        border: 1px solid #e4e4e4;
+    }
+    .main-news-top-faster {
+        height: 163px;
+        border-bottom: 1px dashed #e4e4e4;
+    }
+    .main-news-top-faster-title {
+        height: 32px;
+        line-height: 32px;
+        padding: 0 15px;
+        border-bottom: 1px dotted #e8e8e7;
+    }
+    .main-news-top-faster-title h2 {
+        float: left;
+        font: 400 16px/32px "microsoft yahei";
+    }
+    .main-news-top-faster-title a {
+        float: right;
+        font-family: "consolas";
+    }
+    .main-news-top-faster-content {
+        padding: 5px  0 0 15px;
+    }
+    .main-news-top-faster-content li {
+        line-height: 24px;
+    }
+    .main-news-top-faster-content span {
+        font-weight: 700;
+        margin-right: 5px;
+    }
+    .main-news-top-money ul{
+        width: 252px;
+         }
+    .main-news-top-money li {
+        width: 62px;
+        height: 70px;
+        float: left;
+        margin-left: -1px;
+        margin-top: -1px;
+        border: 1px solid #e8e8f7;
+        border-top: 0;
+    }
+    .main-news-top-money a {
+        display: block;
+        width: 62px;
+        height: 30px;
+        position: relative;
+        padding-top: 40px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .main-news-top-money i {
+        position: absolute;
+        top: 13px;
+        left: 18px;
+        width: 25px;
+        height: 25px;
+        background: url("../images/fly.png") no-repeat;
+    }
+    .main-news-top-money .main-news-top-money-icon2 {
+        background-position: 0 -25px;
+    }
+    .main-news-top-money .main-news-top-money-icon3 {
+        background-position: 0 -50px;
+    }
+    .main-news-top-money .main-news-top-money-icon4 {
+        background-position: 0 -75px;
+    }
+    .main-news-top-money .main-news-top-money-icon5 {
+        background-position: 0 -100px;
+    }
+    .main-news-top-money .main-news-top-money-icon6 {
+        background-position: 0 -125px;
+    }
+    .main-news-top-money .main-news-top-money-icon7 {
+        background-position: 0 -150px;
+    }
+    .main-news-top-money .main-news-top-money-icon8 {
+        background-position: 0 -175px;
+    }
+    .main-news-top-money .main-news-top-money-icon9 {
+        background-position: 0 -200px;
+    }
+    .main-news-top-money .main-news-top-money-icon10 {
+        background-position: 0 -225px;
+    }
+    .main-news-top-money .main-news-top-money-icon11 {
+        background-position: 0 -250px;
+    }
+    .main-news-top-money .main-news-top-money-icon12 {
+        background-position: 0 -275px;
+    }
+        /*.show {*/
+        /*background: url("../images/free.png") no-repeat right top;*/
+        /*}*/
+    .main-news-top-money .main-news-top-money-icon-top {
+        /*display: block;*/
+        width: 14px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 3px;
+        line-height: 16px;
+        color: #fff;
+        background-color: #e01121;
+        /*border-radius: 0 0 15px 15px;*/
+        /*cursor: pointer;        指针*/
+        /*font-style: normal;*/
+    }
+    .main-news-top-money .main-news-top-money-icon-bottom {
+        width: 14px;
+        height: 16px;
+        position: absolute;
+        top: 16px;
+        right: 3px;
+        background: #fff;
+        border-radius: 70px 70px 0 0;
+        z-index: 1;
+    }
+        /*父相子绝原则    标签类别使用原则    行高继承原则  包含关系原则*/
+
+        /*main end*/
+
+        /*today start*/
+    .today {
+        /*margin: 10px auto 20px;*/
+        position: relative;
+        padding: 10px 0 20px;
+    }
+    .today-left {
+        float: left;
+    }
+    .today-left a {
+        display: block;
+        width: 205px;
+        height: 151px;
+        background: url("../images/pic1.jpg") no-repeat left bottom;
+    }
+    .today-right {
+        width: 1000px;
+        float: right;
+        overflow: hidden;
+        position: relative;
+    }
+    .today-right ul{
+        width: 410%;
+        /*margin-left: 5px;*/
+    }
+    .today-right li {
+        float: left;
+        margin-right: 1px;
+    }
+    /*today end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
